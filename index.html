@@ -1,12 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<title>CTNP|Crypto Portfolio</title>
 	<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
 	 <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -15,43 +20,69 @@
 	<!-- Main Nav bar -->
 	<div class="nav">
 		<ul>
-			<li><a href="">Home</a></li>
-			<li><a href="">Price's</a></li>
-			<li><a href="">Blog</a></li>
-			<li><a href="">News</a></li>
-			<li><a href=""></a></li>
+			<li><a href="">Home</a></li><!-- Home page etc.. -->
+			<li><a href="">Price's</a></li><!-- price charts with live updates -->
+			<li><a href="">Blog</a></li><!-- blog and forum for users to discuss crypto and strategy -->
+			<li><a href="">News</a></li><!-- News from online API source's -->
+			<li><a href="">Portfolio</a></li><!-- Will need Users profiles etc.. and login functionality! -->
+			<button type="btn btn-default">Sign in</button>
+			<button type="btn btn-default">Sign up</button>
 		</ul>
 	</div>
-<table class="table">
+	<div id="MainContent">
+		<h2 align="center">Welcome to CNTP</h2>
+		<p align="center">This is an investment tracking platform, so you can track how much you have invested, where you have invested it and how much you have made in the time period chosen.</p>
+	</div>
+<table class="table col-md-12" id="mainTable" align="center">
 	<thead>
-		<!-- Top Three rows to be used for the main three highest volume -->
+		<!-- Top five rows to be used for the main three highest volume -->
 		<tr>
-			<th>Name</th>
-			<th class="glyphicon glyphicon-arrow-up"></th>
-			<th class="glyphicon glyphicon-arrow-down"></th>
-			<th>24hr change</th>
-			<th>Price</th>
+			<th class="col-md-2">Name</th>
+			<th class="col-md-2">Rise</th>
+			<th class="col-md-2">Fall</th>
+			<th class="col-md-2">24hr change</th>
+			<th class="col-md-2">Price</th>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="col-md-2">BTC</td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="col-md-2">ETH</td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
 		</tr>
 	</tbody>
 	<tfoot>
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td class="col-md-2">XRP</td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
 		</tr>
-		<!-- End of to three -->
+		<tr> 
+			<td class="col-md-2">LTC</td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+		</tr>
+		<tr>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+			<td class="col-md-2"></td>
+		</tr>
+		<!-- End of 5 starting rows -->
 		<!-- Need an API from Coin Market Cap -->
 	</tfoot>
 </table>
@@ -59,4 +90,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
+<footer>
+	<table class="table">
+		<thead>
+			<tr>
+				<td class="col-md-4"></td>
+				<td id="footHeader" class="col-md-4"><h3>CTNP</h3></td>
+				<td class="col-md-4"></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="col-md-4"></td>
+				<td class="col-md-4"></td>
+				<td class="col-md-4"></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td class="col-md-4"></td>
+				<td class="col-md-4"></td>
+				<td class="col-md-4"></td>
+			</tr>
+		</tfoot>
+	</table>
+</footer>
 </html>
