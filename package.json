@@ -1,0 +1,13 @@
+{
+	"name":"ctnportfolio",
+	"description":"A trading portfolio platform for keeping track of investments, growth, loss and profits.",
+	"version":"1.0.0",
+	"main":"index.html",
+	"scripts":{
+		"test":"echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords":[],
+	"author":"lucas hartley",
+	"bugs":"",
+	"homepage":""
+}
